@@ -37,6 +37,7 @@ const Products = ({ match }) => {
   const keyword = match.params.keyword;
   const setCurrentPageNo = (e) => {
     setCurrentPage(e);
+    window.scrollTo(0, 0);
   };
 
   const priceHandler = (event, newPrice) => {

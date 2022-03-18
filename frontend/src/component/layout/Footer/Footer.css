@@ -1,0 +1,224 @@
+footer {
+  margin-top: 10vmax;
+  padding: 2vmax;
+  background-color: rgb(34, 33, 33);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.leftFooter {
+  width: 20%;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.leftFooter > h4 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1vmax;
+}
+.leftFooter > h4 > a {
+  text-decoration: none;
+  color: white;
+}
+
+.leftFooter > p {
+  text-align: center;
+  font-size: 1.2vmax;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.leftFooter > img {
+  width: 10vmax;
+  margin: 1vmax;
+  cursor: pointer;
+}
+
+.left-footer > div > a {
+  color: white;
+}
+
+.leftFooter > div > a > svg {
+  margin: 1vmax 0.5vmax;
+  width: 3vmax;
+  height: 3vmax;
+  text-decoration: none;
+  /* background-color: green; */
+  /* color: white; */
+}
+
+.whatsapp {
+  color: white;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 228, 0),
+    rgba(0, 139, 0, 0.699)
+  );
+  border-radius: 0.4vmax;
+}
+
+.whatsapp:hover {
+  box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.25);
+}
+
+.phone {
+  color: white;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 255, 0),
+    rgba(0, 185, 0, 0.699)
+  );
+  border-radius: 0.4vmax;
+}
+
+.phone:hover {
+  box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.25);
+}
+
+.instagram {
+  width: 3vmax;
+  height: 3vmax;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  border-radius: 0.4vmax;
+
+  box-shadow: none;
+}
+.instagram:hover {
+  /* background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #d6249f 45%,
+    #fd5949 60%,
+    #285aeb 90%
+  ); */
+  box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.25);
+}
+
+/* .leftFooter > div > a > svg:hover {
+  color: #eb4034;
+} */
+
+.midFooter {
+  width: 60%;
+  text-align: center;
+}
+
+.midFooter > h1 {
+  font-size: 5vmax;
+  font-family: "Roboto";
+  color: #eb4034;
+}
+
+.midFooter > p {
+  max-width: 60%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 1vmax auto;
+}
+
+.quality {
+  font-size: 2vmax;
+}
+
+.copyright {
+  margin-top: 3vmax;
+  padding-top: 0.2vmax;
+  border-top: 1px solid rgba(190, 190, 190, 0.345);
+  font-size: 0.7vmax;
+}
+
+.rightFooter {
+  width: 20%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rightFooter > h4 {
+  font-family: "Roboto";
+  font-size: 1.4vmax;
+  text-decoration: underline;
+}
+
+.rightFooter > a {
+  text-decoration: none;
+  font-size: 1.3vmax;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  margin-top: 0.75vmax;
+}
+
+.rightFooter > a > svg {
+  width: 3vmax;
+  height: 3vmax;
+}
+
+.rightFooter > a > div {
+  width: 3vmax;
+  height: 3vmax;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: end;
+  background-color: #3b5998;
+  border-radius: 0.4vmax;
+}
+
+.rightFooter > a > div > div {
+  width: 100%;
+
+  height: 3vmax;
+  overflow: hidden;
+  border-radius: 0.4vmax;
+
+  box-shadow: none;
+}
+
+.rightFooter > a > div > div > .facebook {
+  right: 0;
+  bottom: 0;
+  height: 4vmax;
+  width: 70%;
+  color: white;
+  background-color: #3b5998;
+}
+
+.rightFooter > a > div > div:hover {
+  box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.25);
+}
+
+/* .rightFooter > a > svg:hover {
+  color: #a8a8a8a1;
+} */
+
+@media screen and (max-width: 600px) {
+  footer {
+    min-height: 15vmax;
+  }
+  .leftFooter > h4 {
+    font-size: 0.95vmax;
+  }
+
+  .leftFooter > p {
+    font-size: 1vmax;
+  }
+  .midFooter > h1 {
+    font-size: 3vmax;
+  }
+
+  .quality {
+    font-size: 1.2vmax;
+  }
+}

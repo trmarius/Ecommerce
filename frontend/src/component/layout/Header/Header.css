@@ -1,0 +1,231 @@
+.navbar-mobile {
+  display: none;
+}
+
+.speedDial {
+  position: fixed;
+  right: 3vmax;
+  top: 3vmax;
+}
+
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+
+.cartOpen {
+  position: fixed;
+  right: 7vmax;
+  top: 3vmax;
+  z-index: 999;
+}
+
+.mobile-menu-open {
+  /* left: -100%; */
+}
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .UserDot {
+    display: none;
+  }
+
+  .cartOpen {
+    display: none;
+  }
+
+  .react-navbar {
+    display: none;
+  }
+
+  .navbar-mobile {
+    height: 80px;
+    max-height: 80px;
+    z-index: 999999;
+    display: block;
+    position: sticky;
+    top: 0;
+    background-color: #f9f5e8;
+    background-color: silver;
+    background-image: linear-gradient(to bottom, silver, white);
+  }
+
+  .navbar-mobile-container {
+    display: grid;
+    grid-template-columns: 4fr 2fr 4fr;
+    width: 100%;
+    max-width: 100%;
+    height: 80px;
+    align-items: center;
+    /* background-color: #f8e8db; */
+  }
+
+  .navbar-mobile-container > div {
+    box-sizing: border-box;
+  }
+  .navbar-mobile-container-col-1 {
+    width: 100%;
+  }
+
+  .navbar-mobile-container-col-2 {
+    width: 100%;
+  }
+  .navbar-mobile-container-col-3 {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0 4vw;
+  }
+
+  .searchIcon,
+  .accountIcon,
+  .navEmptyCart {
+    width: 7vw;
+    height: 7vw;
+    padding: 0 1vw;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.823);
+  }
+
+  .navFullCart {
+    color: tomato;
+  }
+
+  .navbar-mobile-menu {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .navbar-mobile-menu > svg {
+    padding-left: 1vw;
+    width: 10vw;
+    height: 5vh;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.823);
+  }
+
+  .close-icon {
+    color: tomato;
+  }
+
+  .navbar-mobile-menu > div {
+    font: 400 18px "CentraleSansBook";
+    padding-left: 4px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.823);
+  }
+
+  .navbar-mobile-container-col-2 > a > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .navbar-mobile-bottom {
+    width: 100%;
+    display: flex;
+    grid-template-columns: 4fr 2 4fr;
+    box-sizing: border-box;
+  }
+  .navbar-mobile-bottom-1 {
+    height: 1px;
+    width: 40%;
+    bottom: 0;
+    background-color: #4a796c;
+    margin-left: 2%;
+  }
+
+  .navbar-mobile-bottom-2 {
+    height: 1px;
+    bottom: 0;
+    width: 16%;
+  }
+
+  .navbar-mobile-bottom-3 {
+    height: 1px;
+    width: 40%;
+    bottom: 0;
+    background-color: #4a796c;
+    margin-right: 2%;
+  }
+
+  /***************************************/
+  /***************************************/
+  /***************************************/
+  /***************************************/
+  /***************************************/
+  /***************************************/
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -150%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .mobile-menu-active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    justify-content: flex-start;
+    margin-right: 2rem;
+    list-style: none;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f9f5e8; */
+    background-color: #f9f5e8;
+    background-color: silver;
+    background-image: linear-gradient(to top, silver, white);
+
+    left: 0;
+    opacity: 1;
+    z-index: 1;
+    text-align: center;
+    padding-top: 12vh;
+    transition: all 0.5s ease;
+  }
+
+  .nav-item {
+    height: 60px;
+    box-sizing: border-box;
+    margin: 3vmax 0;
+    padding: 0;
+  }
+
+  .nav-links {
+    display: table;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    height: 100%;
+    text-align: center;
+    justify-content: end;
+    align-items: flex-end;
+    padding: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 0;
+    font: 200 3vmax "Roboto";
+  }
+
+  .nav-links:hover {
+    background-color: #fff;
+    color: tomato;
+    border-radius: 0;
+    transition: all 0.2s ease-out;
+  }
+}
